@@ -29,7 +29,7 @@ kramdown:
 # Sass settings
 sass:
   add_charset: true
-  sass_dir: assets/sass
+  sass_dir: assets/css
   style: :compressed
 
 # Build settings
