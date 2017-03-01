@@ -1,9 +1,6 @@
-<footer>
+<footer class="section">
 
   <div class="container">
-
-    <h2>{{ site.title | escape }}</h2>
-
     <div class="columns">
       <div class="column">
         <ul>
@@ -18,6 +15,8 @@
             
             <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {% endif %}
+
+            <li>Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></li>
         </ul>
       </div>
 
