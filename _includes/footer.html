@@ -1,12 +1,12 @@
-<footer class="site-footer">
+<footer>
 
-  <div class="wrapper">
+  <div class="container">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    <h2>{{ site.title | escape }}</h2>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
+    <div class="columns">
+      <div class="column">
+        <ul>
           <li>
             {% if site.author %}
               {{ site.author | escape }}
@@ -15,13 +15,14 @@
             {% endif %}
             </li>
             {% if site.email %}
+            
             <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {% endif %}
         </ul>
       </div>
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
+      <div class="column">
+        <ul>
           {% if site.github_username %}
           <li>
             {% include icon-github.html username=site.github_username %}
@@ -36,11 +37,10 @@
         </ul>
       </div>
 
-      <div class="footer-col footer-col-3">
+      <div class="column">
         <p>{{ site.description | escape }}</p>
       </div>
     </div>
-
   </div>
 
 </footer>
